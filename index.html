@@ -11,15 +11,19 @@
       background: white;
       height: 100%;
       width: 100%;
+      font-family: Helvetica, Arial, sans-serif;
+      color: #222;
     }
 
     .container {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      padding: 0 1rem;
+      min-height: 100vh;
+      padding: 1.5rem 1rem;
       box-sizing: border-box;
+      text-align: center;
     }
 
     img {
@@ -28,6 +32,19 @@
       height: auto;
       cursor: pointer;
       display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    .caption {
+      font-size: 1rem;
+      font-weight: normal;
+      margin-bottom: 0.5rem;
+    }
+
+    .source {
+      font-size: 0.85rem;
+      color: #555;
+      font-style: italic;
     }
   </style>
 </head>
@@ -36,6 +53,8 @@
     <a href="https://kultur.muelheim-ruhr.de/kunstmuseum/kunst-im-oeffentlichen-raum/52" target="_blank">
       <img src="Arbeiter.jpg" alt="Kunstwerk">
     </a>
+    <div class="caption">Klick auf das Bild für mehr Informationen</div>
+    <div class="source">Bildquelle: Stadtarchiv Mülheim an der Ruhr</div>
   </div>
 </body>
 </html>
