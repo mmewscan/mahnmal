@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="de">
-<link rel="icon" type="image/png" href="favicon.png">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mahnmal von Emil Walde</title>
+  <link rel="icon" type="image/png" href="favicon.png">
   <style>
     html, body {
       margin: 0;
       padding: 0;
       background: white;
-      height: 100%;
-      width: 100%;
       font-family: Helvetica, Arial, sans-serif;
       color: #222;
+    }
+
+    .header {
+      width: 100%;
+      padding: 1.5rem 2rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      background: white;
+      z-index: 10;
+    }
+
+    .brand a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+      font-size: 1rem;
     }
 
     .container {
@@ -20,35 +40,39 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
-      padding: 1.5rem 1rem;
+      padding: 8rem 1rem 3rem;
       box-sizing: border-box;
       text-align: center;
     }
 
     img {
       width: 100%;
-      max-width: 600px;
+      max-width: 90vw;
       height: auto;
       cursor: pointer;
       display: block;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
 
     .caption {
-      font-size: 1rem;
-      font-weight: normal;
+      font-size: 1.1rem;
       margin-bottom: 0.5rem;
     }
 
     .source {
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       color: #555;
       font-style: italic;
     }
   </style>
 </head>
 <body>
+  <div class="header">
+    <div class="brand">
+      <a href="https://www.instagram.com/emil_walde/" target="_blank">Emil Walde</a>
+    </div>
+  </div>
+
   <div class="container">
     <a href="https://kultur.muelheim-ruhr.de/kunstmuseum/kunst-im-oeffentlichen-raum/52" target="_blank">
       <img src="Arbeiter.jpg" alt="Kunstwerk">
